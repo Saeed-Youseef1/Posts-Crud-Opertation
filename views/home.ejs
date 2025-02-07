@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="/css/styles.css">
+
+</head>
+<body>
+    <nav>
+        <div>
+           <img src="/images/logo.png" class="logo" alt="logo"> 
+        </div>
+    </nav>
+    <div class="head-home">
+        <h1>Posts</h1>
+        <button class="create-btn">Create Post</button>
+    </div>
+    <%-renderPosts(posts) %>
+</body>
+</html>
