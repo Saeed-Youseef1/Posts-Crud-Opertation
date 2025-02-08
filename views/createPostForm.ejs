@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Postify | Home</title>
+    <title>Postify | Create Post</title>
     <link rel="stylesheet" href="/css/styles.css">
 
 </head>
@@ -16,14 +16,14 @@
                 <li><a href="/posts">Posts</a></li>
             </ul>
         </div>
-        
     </nav>
     <div class="main-home">
-        <div>
-            <h1>Welcome TO Postify</h1>
-            <a id="show-posts" href="/posts">Show Posts</a>
-        </div>
-        
+        <form class="create-input" id="createForm">
+            <input type="text" id="title" required placeholder="Enter Title Of Post" />
+            <textarea id="description" required placeholder="Enter Description Of Post"></textarea>
+            <button type="submit" class="create-btn" style="width: 30%; margin-top: 50px;">Create Post</button>
+        </form>
     </div>
+   
 </body>
 </html>

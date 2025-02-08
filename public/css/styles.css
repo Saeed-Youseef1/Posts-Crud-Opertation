@@ -8,11 +8,36 @@
 nav {
     padding: 5px 20px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    
 }
 
 nav >div {
     width: 95%;
     margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+nav >div img{
+    width: fit-content;
+}
+
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    flex: 1;
+    justify-content: center;
+    gap:30px;
+}
+
+
+
+nav ul li a{
+    font-family: "Bebas Neue", cursive;
+    font-size: 1.2rem;
+    text-decoration: none;
 }
 
 .logo {
@@ -58,6 +83,14 @@ nav >div {
     font-size: 1.1rem; 
     color: white;
     cursor: pointer;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.create-btn:hover {
+    background-color: rgba(0, 128, 0, 0.722);
+    color: rgb(255, 255, 255);
+
 }
 
 .articles {
@@ -177,9 +210,67 @@ article a, .read-more {
 
 
 
+.main-home {
+    background-image: radial-gradient( circle farthest-corner at 48.4% 47.5%,  rgba(122,183,255,1) 0%, rgba(21,83,161,1) 90% );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 655px;
+}
 
 
-  
+
+.main-home  h1 {
+    font-family: "Bebas Neue", cursive;
+    font-size: 3rem;
+    margin-bottom: 30px;
+}
+
+#show-posts {
+    text-decoration: none;
+    padding: 10px 30px;
+    border-radius: 30px;
+    background-color: white;
+    color: #4b5ae4;
+    font-family: "Bebas Neue", cursive;
+    font-size: 1.5rem;
+    transition: 0.3s;
+    
+}
+
+#show-posts:hover {
+    color: white;
+    background-color: #4b5ae4;
+}
+
+.create-input input,button {
+    display: block;
+    margin: 20px 0;
+}
+
+.create-input input,textarea {
+    border-radius: 30px;
+    width: 80%;
+    padding: 15px 20px;
+    outline: none;
+    font-family: "Bebas Neue", cursive;
+    font-size: 1.1rem;
+    border: none;
+    resize: none;
+
+}
+
+.main-home {
+    width: 100%;
+}
+
+.create-input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
 
 
 

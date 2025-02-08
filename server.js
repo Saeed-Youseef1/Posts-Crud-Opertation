@@ -17,12 +17,13 @@ app.set('view engine', 'ejs')
 app.set('views', path.join(__dirname, '/views'))
 app.use(express.static(path.join(__dirname, "public")));
 
-const {renderPosts,renderPost} = require("./public/index");
+const {renderPosts,renderPost,createPost} = require("./public/index");
 app.locals.renderPosts = renderPosts;
 app.locals.renderPost = renderPost;
+app.locals.createPost = createPost;
 
 
-app.use('/posts',postsRouter);
+app.use('/',postsRouter);
 
 
 mongoose.connection.once('open',()=> {

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Postify | Home</title>
+    <title>Home</title>
     <link rel="stylesheet" href="/css/styles.css">
 
 </head>
@@ -18,12 +18,10 @@
         </div>
         
     </nav>
-    <div class="main-home">
-        <div>
-            <h1>Welcome TO Postify</h1>
-            <a id="show-posts" href="/posts">Show Posts</a>
-        </div>
-        
+    <div class="head-home">
+        <h1>Posts</h1>
+        <a href="/create-post" class="create-btn">Create Post</a>
     </div>
+    <%-renderPosts(posts) %>
 </body>
 </html>

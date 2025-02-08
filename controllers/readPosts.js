@@ -9,7 +9,7 @@ const getAllPosts = async (req, res) => {
             return res.status(404).json({ message: "No Posts Found!" });
         }
 
-        res.render('home', {posts})
+        res.render('posts', {posts})
 
     } catch (error) {
         return res.status(500).json({ message: "Internal Server Error" });

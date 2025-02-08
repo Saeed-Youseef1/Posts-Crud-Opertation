@@ -1,20 +1,26 @@
 
-const getAllPosts = require('../controllers/readPosts')
-const getPost = require('../controllers/readPost')
+const getAllPosts = require('../controllers/readPosts');
+const getPost = require('../controllers/readPost');
+const getHome = require('../controllers/readHome');
+const  createPost = require('../controllers/createPost');
+const  deletePost = require('../controllers/deletePost');
+const  updateCourse = require('../controllers/updatePost');
 
 const express = require('express');
 const router = express.Router();
 
-router.route('/')
+router.route('/').get(getHome);
+
+router.route('/posts')
         .get(getAllPosts)
-        // .post(controllers.createCourse);
+        .post(createPost)
+       
 
+router.get("/create-post", (req, res) => {res.render('createPostForm');});
 
-        
-router.route('/:id')
+router.route('/posts/:id')
         .get(getPost)
-        // .patch(controllers.updateCourse)
-//         .delete( controllers.deleteCourse);
-
+        .delete(deletePost)
+         .put(updateCourse)
 
 module.exports = router
