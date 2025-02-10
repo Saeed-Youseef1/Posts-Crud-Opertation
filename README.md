@@ -1,2 +1,2 @@
 # Posts-Crud-Opertation
-MVC app to do crud opertion on posts 
+MVC Node Js app to do crud opertion on posts 
